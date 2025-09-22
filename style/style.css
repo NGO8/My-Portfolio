@@ -676,3 +676,126 @@ h1{
     color: #666;
     margin-top: 10px;
 }
+
+/* Tablets (landscape, portrait) */
+@media (max-width: 1024px) {
+  .hero, .hero2, .hero3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+
+  .hero-right {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .hero2-left video {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero3-cards {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .nav-one {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-center ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+
+  .hero-right img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .logo-links {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .hero2-left, .hero3-left {
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero3-cards {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer, .footer-info {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .connect-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .connect-left {
+    font-size: 2rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .intro, .intro-two, .services2, .experience-right, .portfolio-right {
+    max-width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .button, .button-service, .button-signin, .button-experience, 
+  .button-portfolio, .button-connect {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .hero-right img {
+    width: 120px;
+    height: 150px;
+  }
+}
